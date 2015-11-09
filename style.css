@@ -97,6 +97,7 @@ body {
     padding: 7px;
     font-weight: bold;
     margin-top: 0px;
+    
 
 }
 #boxtext{
@@ -112,6 +113,13 @@ select{
     height: auto;
     padding: 15px 25px;
     font-size: 15px;
+}
+#dropdown_register{
+    width: 50%;
+    padding: 2px 2px;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-top: -26px;
 }
 #formLayout label, #formLayout input
 {
@@ -297,4 +305,10 @@ footer.listPatient{
 .startform{
     height: auto;
     width: auto;
+}
+#form_register{
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 2px;
 }

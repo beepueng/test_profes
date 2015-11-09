@@ -12,36 +12,79 @@
 </head>
 
 <body>
-    <div class="navigation-bar">
+    <div class="navigation-bar" style="margin-top:10px;">
         <div class="navigation-bar__center" style="font-size:30px">
             ลงทะเบียนผู้ป่วยใหม่
         </div>
     </div>
     
     <ons-page>
-        <div class="formarea" style="text-align:center; margin-top:20px;">
-            <div class="form-row" style="text-align:center; margin-top:20px;">
-              <input type="text" class="text-input--underbar width-full" placeholder="เลขประจำตัวผู้ป่วย" value="">
+        
+        <div class="formarea" style="margin-top:-20px;font-family:WDB_Bangna;">
+            
+            <div class="form-row" style="margin-top:30px;margin-left:50px;">
+            <form id="form_register">
+        เลขประจำตัวผู้ป่วย<br></form>
+              <input type="text" class="text-input--underbar width-full" placeholder="1234567" value="">
             </div>
 
-             <div class="form-row" style="text-align:center; margin-top:10px;">
+             <div class="form-row" style="margin-top:0px;margin-left:50px;">
+              <form id="form_register">
+       ชื่อ-นามสกุล<br></form>  
               <input type="text" class="text-input--underbar width-full" placeholder="ชื่อ-นามสกุล" value="">
             </div>
 
-             <div class="form-row" style="text-align:center; margin-top:10px;">
-              <input type="password" class="text-input--underbar width-full" placeholder="Password" value="">
+             <div class="form-row" style="margin-top:0px;margin-left:50px;">
+                <form id="form_register">
+        รหัสผ่าน<br></form>
+              <input type="password" class="text-input--underbar width-full" placeholder="****" value="" ><br>
+              <label class="checkbox" style="font-family:WDB_Bangna;text-align:left;">
+                      <input type="checkbox" checked="checked">
+                      <div class="checkbox__checkmark"></div>
+                    ไม่เอารหัสผ่าน<br>
+               </label>
+            </div>
+            
+            <div class="form-row" style="margin-top:0px;margin-left:50px;">   
+            <form id="form_register">
+        เพศ<br></form>
+                 
+                <label class="radio-button" style="font-family:WDB_Bangna;margin-top:-26px;margin-left:40px;">
+                      <input type="radio" name="r" checked="checked">
+                      <div class="radio-button__checkmark"></div>
+                      ชาย
+                    </label>
+                <label class="radio-button" style="font-family:WDB_Bangna;margin-top:-26px;margin-left:3px;">
+                      <input type="radio" name="r" checked="checked">
+                      <div class="radio-button__checkmark"></div>
+                      หญิง
+                    </label>         
+            </div>
+            
+            <div class="form-row" style="margin-top:0px;margin-left:50px;">
+               <form id="form_register">
+        เบอร์โทรศัพท์<br></form>
+              <input type="text" class="text-input--underbar width-full" placeholder="" value="" style="border-width-left: 1px">
             </div>
 
-            <div class="form-row" style="text-align:center; margin-top:10px;">
-              <input type="text" class="text-input--underbar width-full" placeholder="เบอร์โทรศัพท์" value="" style="border-width-left: 1px">
+            <div class="form-row" style="margin-top:0px;margin-left:50px;">
+               <form id="form_register">
+        โรคประจำตัว<br></form> 
+                <select id="dropdown_register" name="gender" style="margin-top: -50px; margin-left: 0px;">
+                    <option value="male">ไม่มี</option>
+                    <option value="male">เบาหวาน</option>
+                     <option value="male">มะเร็ง</option>
+                     <option value="male">ไต</option>
+                     <option value="male">ไมเกรน</option>
+                     <option value="male">กระเพาะอาหาร</option>
+                  </select>
+              
             </div>
 
-            <div class="form-row" style="text-align:center; margin-top:10px;">
-              <input type="password" class="text-input--underbar width-full" placeholder="โรคประจำตัว" value="">
-            </div>
-
-            <div class="form-row" style="text-align:center; margin-top:10px;">
-              <input type="password" class="text-input--underbar width-full" placeholder="อาหารที่แพ้" value="">
+            <div class="form-row" style="margin-top:0px;margin-left:50px;">
+             <form id="form_register">
+        อาหารที่แพ้<br></form>
+              <input type="password" class="text-input--underbar width-full" placeholder="ไม่มี" value="">
             </div>
 
             <!--<div class="lucent" style="font-size:10px">
@@ -50,7 +93,7 @@
 
             <div class="vspc form-row">
                 <form action="welcomepageDoc.html" method="get" id="newUserForm">
-                    <button class="button button--large--cta" style="margin-top:40px; font-family:WDB_Bangna;border-radius:10px;">บันทึกการลงทะเบียน</button><br>
+                    <button class="button button--large--cta" style="margin-top:10px; font-family:WDB_Bangna;border-radius:10px;">บันทึกการลงทะเบียน</button><br>
                 </form>
             </div>
         </div>
