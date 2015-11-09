@@ -1,6 +1,6 @@
 @font-face{
     font-family: WDB_Bangna;
-    src: url('font/WDB_Bangna.ttf');
+    src: url('font/Waffle Regular.otf');
 }
 
 html , body {
@@ -14,7 +14,7 @@ html , body {
 }
 
 body {
-    width: 100%;
+    width:auto;
     font-family: WDB_Bangna;
 }
 
